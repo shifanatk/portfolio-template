@@ -1,19 +1,20 @@
 {
-    "name": "Your Name",
-    "tagline": "Your one-line introduction",
-    "bio": "Write 2 or 3 sentences about yourself.",
+    "name": "Shifana T K",
+    "tagline": "Learner",
+    "bio": "Passionate about coding, learning new technologies, and building practical software projects.",
     "skills": [
         "Git",
         "HTML"
     ],
     "projects": [
         {
-            "title": "My first project",
-            "desc": "What it does.",
-            "link": "https://github.com/yourname"
+            "title": "StageCraft Suite",
+            "desc": "An AI-powered desktop interview simulator built with Python and CustomTkinter. It uses OpenCV and MediaPipe for real-time body language tracking, integrates Google Gemini for dynamic questioning, and analyzes speech pacing and filler words.",
+            "link": "https://github.com/shifanatk/stagecraft-suite"
         }
     ],
     "links": {
-        "github": "https://github.com/yourname"
+        "github": "https://github.com/shifanatk",
+        "linkedin": "https://linkedin.com/in/shifana-t-k-000bb9252/"
     }
 }
