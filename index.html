@@ -8,32 +8,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shifana T K | Software Developer">
+  <meta property="og:description" content="AI and system applications. Open to internships and projects.">
+  <meta property="og:image" content="https://shifanatk.github.io/portfolio-template/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="progress" id="progress"></div>
   <nav class="nav">
     <a class="logo" href="#top" id="logo" aria-label="Home"></a>
     <div class="nav-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience" id="navExp">Experience</a><a href="#contact">Contact</a></div>
     <button id="theme" class="icon-btn" aria-label="Toggle dark and light mode"></button>
   </nav>
-  <main id="top">
-    <header class="hero" id="hero">
+  <nav class="dots" id="dots" aria-label="Sections"></nav>
+  <main>
+    <header class="scene hero" id="top" data-word="hello" data-label="Home">
+      <img class="avatar" id="avatar" alt="" hidden>
       <p class="status"><span class="dot"></span><span id="status"></span></p>
       <h1 id="name"></h1>
       <p class="tagline" id="tagline"></p>
-      <p class="now" id="now"></p>
-      <p class="hint">Move your cursor over the name</p>
+      <p class="edu-pill" id="now"></p>
+      <nav class="links hero-links" id="heroLinks" aria-label="Profile links"></nav>
+      <a class="cue" href="#about" aria-label="Scroll to About"><span></span></a>
     </header>
-    <section class="sec" id="about"><h2>About</h2><div><p class="lead" id="bio"></p><div class="card edu" id="edu"></div></div></section>
-    <section class="sec" id="skills"><h2>Skills</h2><div class="skill-grid" id="skillGrid"></div></section>
-    <section class="sec" id="projects"><h2>Projects</h2><div class="stack" id="projectList"></div></section>
-    <section class="sec" id="experience"><h2>Experience</h2><div class="tl" id="expList"></div></section>
+    <section class="scene alt" id="about" data-word="about" data-label="About">
+      <div class="wrap two">
+        <div><h2>About me</h2><p class="lead" id="bio"></p></div>
+        <div class="side"><div class="portrait" id="portrait"></div><div class="card edu" id="edu"></div></div>
+      </div>
+    </section>
+    <section class="scene" id="skills" data-word="skills" data-label="Skills">
+      <div class="wrap"><h2>Skills</h2><p class="muted">Pick a skill to jump to the projects built with it.</p><div class="skill-grid" id="skillGrid"></div></div>
+    </section>
+    <section class="scene alt" id="projects" data-word="work" data-label="Projects">
+      <div class="wrap head"><h2>Projects</h2><p class="muted" id="filterNote"></p>
+        <div class="ctrl"><button class="icon-btn" id="prev" aria-label="Previous project">‹</button><span id="count"></span><button class="icon-btn" id="next" aria-label="Next project">›</button></div></div>
+      <div class="track" id="projectList"></div>
+    </section>
+    <section class="scene" id="experience" data-word="journey" data-label="Experience">
+      <div class="wrap"><h2>Experience</h2><div class="tl" id="expList"></div></div>
+    </section>
+    <footer class="scene alt" id="contact" data-word="hi" data-label="Contact">
+      <div class="wrap center"><h2>Let's build something.</h2><p class="lead">Open to internships and projects. Say hello.</p>
+        <nav class="links" id="links" aria-label="Profile links"></nav>
+        <p class="fine">Built with plain HTML, CSS and JS. Content lives in <code>profile.json</code>.</p></div>
+    </footer>
   </main>
-  <footer class="sec" id="contact">
-    <h2>Contact</h2>
-    <div><p class="lead">Looking for an intern who ships? Let's talk.</p><nav class="links" id="links" aria-label="Profile links"></nav>
-    <p class="fine">Built with plain HTML, CSS and JS. Content lives in <code>profile.json</code>.</p></div>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
