@@ -1,40 +1,37 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shifana TK | Portfolio</title>
+  <title>Shifana T K | Software Developer</title>
+  <meta name="description" content="Portfolio of Shifana T K, software developer focused on AI and system applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="hero">
-    <div class="status-badge"><span>●</span> Open to Internships & Projects</div>
-    <h1 id="name">Shifana TK</h1>
-    <p id="tagline"></p>
-    <nav id="links"></nav>
+  <header class="top">
+    <a class="logo" href="#" id="logo" aria-label="Home"></a>
+    <button id="theme" class="icon-btn" aria-label="Toggle dark and light mode"></button>
   </header>
-
   <main>
-    <section>
-      <h2>About</h2>
-      <p id="bio"></p>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span><span id="status"></span></p>
+        <h1 id="name">Loading…</h1>
+        <p class="tagline" id="tagline"></p>
+        <p class="bio" id="bio"></p>
+        <nav class="links" id="links" aria-label="Profile links"></nav>
+      </div>
+      <figure class="graph card">
+        <canvas id="net" aria-label="Interactive network graph that finds the shortest path to the node you choose"></canvas>
+        <figcaption id="route">Move over a node to route a packet to it.</figcaption>
+      </figure>
     </section>
-
-    <section>
-      <h2>Skills & Technologies</h2>
-      <ul id="skills" class="chips"></ul>
-    </section>
-
-    <section>
-      <h2>Featured Projects</h2>
-      <div id="projects" class="grid"></div>
-    </section>
+    <section class="bento" id="bento" aria-label="Skills and projects"></section>
   </main>
-
-  <footer id="footer"></footer>
+  <footer>Built with plain HTML, CSS and JS. Content lives in <code>profile.json</code>.</footer>
   <script src="script.js"></script>
 </body>
-
 </html>
